@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'com.github.dcendents.android-maven'
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+dependencies {
+    kapt project(':validate-compiler')
+//    api 'com.github.DaoBillTang.MLib:router-annotation:2.0.1B5'
+    api project(':validate-annotation')
+    implementation deps.app_compat
+    implementation deps.kotlin.stdlib
+}

@@ -1,0 +1,3 @@
+include ':validate-api'
+include ':validate-annotation'
+include ':validate-compiler'
